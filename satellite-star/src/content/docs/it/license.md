@@ -4,7 +4,7 @@ title: Note Legali e Licenza
 
 ### Il mio codice, la tua libertà (e i tuoi obblighi)
 
-Ho deciso di rilasciare questa mod e la sua documentazione sotto la licenza **GNU Affero General Public License v3 (AGPLv3)**.
+Ho deciso di rilasciare questa mod e la sua documentazione sotto la licenza **[GNU Affero General Public License v3 (AGPLv3)](https://www.gnu.org/licenses/agpl-3.0.en.html)**.
 
 Ecco cosa significa in parole povere se vuoi usare il mio lavoro:
 
