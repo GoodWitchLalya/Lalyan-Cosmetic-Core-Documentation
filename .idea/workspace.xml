@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d717d390-f33e-4030-b3c4-8666c3f9ec3c" name="Changes" comment="minor fix">
-      <change beforePath="$PROJECT_DIR$/satellite-star/astro.config.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/satellite-star/astro.config.mjs" afterDir="false" />
+    <list default="true" id="d717d390-f33e-4030-b3c4-8666c3f9ec3c" name="Changes" comment="Comment out Mods Index sidebar item">
+      <change beforePath="$PROJECT_DIR$/satellite-star/src/content/docs/en/index.mdx" beforeDir="false" afterPath="$PROJECT_DIR$/satellite-star/src/content/docs/en/index.mdx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/satellite-star/src/content/docs/it/index.mdx" beforeDir="false" afterPath="$PROJECT_DIR$/satellite-star/src/content/docs/it/index.mdx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -113,13 +114,22 @@
       <option name="project" value="LOCAL" />
       <updated>1769708419562</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Comment out Mods Index sidebar item">
+      <option name="closed" value="true" />
+      <created>1769708579587</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1769708579587</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="init" />
     <MESSAGE value="Site completed" />
     <MESSAGE value="minor fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="minor fix" />
+    <MESSAGE value="Comment out Mods Index sidebar item" />
+    <option name="LAST_COMMIT_MESSAGE" value="Comment out Mods Index sidebar item" />
   </component>
 </project>
