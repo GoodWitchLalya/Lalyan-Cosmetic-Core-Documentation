@@ -1,0 +1,29 @@
+---
+title: Mods
+description: Lista di tutte le modifiche disponibili.
+template: splash
+hero:
+  tagline: Esplora la documentazione dettagliata per ogni mia creazione.
+  actions:
+    - text: Torna alla Home
+      link: /Lalyan-Documentation/it/
+      icon: left-arrow
+      variant: primary
+---
+
+import { CardGrid, LinkCard } from '@astrojs/starlight/components';
+
+## Le mie Mod
+
+<CardGrid>
+  <LinkCard
+    title="Lalyan Cosmetic Core"
+    description="Il cuore del sistema estetico. Gestisce cosmetici, shader e personalizzazioni."
+    href="./lalyan-cosmetic-core/"
+  />
+
+  {/* Aggiungi qui altre <LinkCard /> per ogni file che creerai dentro la cartella mods/ */}
+</CardGrid>
+
+---
+Progetto rilasciato sotto licenza [GNU AGPLv3](../license/).

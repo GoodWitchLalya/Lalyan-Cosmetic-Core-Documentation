@@ -5,10 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d717d390-f33e-4030-b3c4-8666c3f9ec3c" name="Changes" comment="init">
-      <change afterPath="$PROJECT_DIR$/satellite-star/src/content/docs/mods-index.mdx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/satellite-star/src/content/docs/en/mods/lalyan-cosmetic-core.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/satellite-star/src/content/docs/it/index.mdx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/satellite-star/src/content/docs/it/license.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/satellite-star/src/content/docs/it/mods.mdx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/satellite-star/src/content/docs/it/mods/lalyan-cosmetic-core.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/satellite-star/astro.config.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/satellite-star/astro.config.mjs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/satellite-star/src/content/docs/index.mdx" beforeDir="false" afterPath="$PROJECT_DIR$/satellite-star/src/content/docs/index.mdx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/satellite-star/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/satellite-star/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/satellite-star/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/satellite-star/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/satellite-star/src/content/docs/index.mdx" beforeDir="false" afterPath="$PROJECT_DIR$/satellite-star/src/content/docs/en/index.mdx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/satellite-star/src/content/docs/license.md" beforeDir="false" afterPath="$PROJECT_DIR$/satellite-star/src/content/docs/en/license.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/satellite-star/src/content/docs/mods-index.mdx" beforeDir="false" afterPath="$PROJECT_DIR$/satellite-star/src/content/docs/en/mods.mdx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,18 +47,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/Reiko/IdeaProjects/Lalyan-Cosmetic-Core-Site/satellite-star/src/content/docs/it/mods",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
-}</component>
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Reiko\IdeaProjects\Lalyan-Cosmetic-Core-Site\satellite-star\src\content\docs\it\mods" />
+      <recent name="C:\Users\Reiko\IdeaProjects\Lalyan-Cosmetic-Core-Site\satellite-star\src\content\docs\it" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Reiko\IdeaProjects\Lalyan-Cosmetic-Core-Site\satellite-star\src\content\docs\en" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
