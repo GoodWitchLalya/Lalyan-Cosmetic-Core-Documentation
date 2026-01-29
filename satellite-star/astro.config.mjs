@@ -33,17 +33,26 @@ export default defineConfig({
                  translations: { it: 'Docs'},
                  items: [
                     { label: 'Mods Index', translations: { it: 'Indice Mods'}, slug: 'mods' },
-                    { label: 'Lalyan Cosmetic Core', translations: { it: 'Lalyan Cosmetic Core'}, slug: 'mod/lalyan-cosmetic-core' },
+                    //{ label: 'Lalyan Cosmetic Core', translations: { it: 'Lalyan Cosmetic Core'}, slug: 'mod/lalyan-cosmetic-core' },
                  ],
              },
              {
 
-                 label: 'Legal Notes',
-                 translations: { it: 'Note Legali'},
+                 label: 'Lalyan Cosmetic Core',
+                 translations: { it: 'Lalyan Cosmetic Core'},
                  items: [
-                    { label: 'License (AGPLv3)', translations: { it: 'Licenza (AGPLv3)'}, slug: 'license' },
+                    { label: 'Documentation', translations: { it: 'Documentazione'}, slug: 'mod/lalyan-cosmetic-core' },
+                    { label: 'Resources', translations: { it: 'Risorse'}, slug: 'mod/lalyan-cosmetic-core/resources' },
                  ],
-             }
+             },
+             {
+
+                  label: 'Legal Notes',
+                  translations: { it: 'Note Legali'},
+                  items: [
+                     { label: 'License (AGPLv3)', translations: { it: 'Licenza (AGPLv3)'}, slug: 'license' },
+                  ],
+             },
           ],
        }),
     ],
