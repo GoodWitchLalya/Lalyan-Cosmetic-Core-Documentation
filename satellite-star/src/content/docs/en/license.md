@@ -4,11 +4,11 @@ title: Legal Notices and License
 
 ### My code, your freedom (and your obligations)
 
-I have decided to release this mod and its documentation under the **GNU Affero General Public License v3 (AGPLv3)**.
+I have decided to release this mod and its documentation under the **[GNU Affero General Public License v3 (AGPLv3)](https://www.gnu.org/licenses/agpl-3.0.en.html)**.
 
 Here is what it means in simple terms if you want to use my work:
 
-* **Mandatory Attribution**: You can copy and distribute the code, but you must always keep my copyright notices intact. You must credit me as the original author.
+* **Mandatory Attribution**: You can copy and distribute the code, but you must always keep my copyright notices intact. You must credit me as the original author, or authors in case of collaboration.
 * **Freedom to Modify**: You can modify the software for your own purposes. However, if you publish a modified version (even just on a server), you must clearly indicate what you changed and on what date.
 * **Open Source**: If you make your modified version available over a network (for example, on a game server or web app), you **must** allow your users to download the complete source code.
 * **Same License**: Any derivative work must be released under this same license (AGPLv3). You cannot make "closed" or "private" what was born free.
