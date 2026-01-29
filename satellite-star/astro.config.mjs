@@ -31,7 +31,7 @@ export default defineConfig({
                  label: 'Docs',
                  translations: { it: 'Docs'},
                  items: [
-                    { label: 'Mods Index', translations: { it: 'Indice Mods'}, slug: 'mods' },
+                    //{ label: 'Mods Index', translations: { it: 'Indice Mods'}, slug: 'mods' },
                     { label: 'Lalyan Cosmetic Core', translations: { it: 'Lalyan Cosmetic Core'}, slug: 'mod/lalyan-cosmetic-core' },
                  ],
              },
