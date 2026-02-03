@@ -1,0 +1,97 @@
+---
+title: Ancient Golemancy
+---
+
+## <span style="color:#b96ad9">Documentazione</span>
+<br/>
+<br/>
+
+Questa pagina è rivolta a chi vuole approfondire il Sistema degli Obiettivi, per capirne il funzionamento o per creare un addon.
+Se non sei tra queste persone, sei nella pagina sbagliata. Questo non è un Tutorial di Gameplay!
+Tutto ciò che vedi qui RICHIEDE un plugin java, non puoi farlo solo tramite JSON.
+
+## <span style="color:#3598db">Tavolette Personalizzate</span>
+
+Le Tavolette Runiche sono oggetti normali con certe interazioni + una singola riga di codice. Per crearne una basta:
+
+- Creare l'oggetto normalmente
+- Aggiungere queste interazioni:
+
+``` json
+  "Interactions": {
+    "Secondary": {
+      "Interactions": [
+        {
+          "Type": "AG_OpenTablet",
+          "CommandLimit": 5,
+          "PageTitle": "Basic Runic Tablet"
+        },
+        {
+          "Type": "AG_SelectVector3d"
+        },
+        {
+          "Type": "AG_SelectVector3i"
+        }
+      ]
+    },
+    "Use": {
+      "Interactions": [
+        {
+          "Type": "AG_ApplyGoals"
+        }
+      ]
+    }
+  }
+```
+
+Puoi cambiare il tasto di Interazione, ma suggerisco di mantenerli invariati per coerenza.
+
+`AG_OpenTablet`: La funzione principale della tavoletta; qui puoi specificare quanti obiettivi può contenere e il nome da visualizzare in alto.
+
+`AG_SelectVector3d` e `AG_SelectVector3i`: Vengono chiamati solo quando si clicca su un pulsante di selezione Bersaglio nella GUI. Gestiscono l'assegnazione delle posizioni all'obiettivo.
+
+`AG_ApplyGoals`: Se chiamato mentre si guarda un golem, applicherà gli obiettivi memorizzati al golem e ti assegnerà come suo owner.
+
+Ora, devi registrare la tavoletta nel codice. Per farlo, aggiungi semplicemente questa riga nel setup della tua mod:
+`GoalHandlerSystem.registerTablet(<Item_ID>);`
+Sostituisci Item_ID con l'id della tavoletta. È necessario internamente per varie operazioni.
+
+## <span style="color:#3598db">Golem Personalizzati</span>
+
+Qualsiasi entità può essere un golem, ti basta registrare il ruolo nella tua funzione di setup usando `ApplyGoalsToGolem.registerGolemRole(<Role_Id>);`
+
+## <span style="color:#3598db">Obiettivi Personalizzati</span>
+
+Questa è la parte più complicata. Il sistema cerca di essere il più semplice e modulare possibile, tuttavia alcune cose potrebbero non essere ancora fattibili.
+
+### <span style="color:#236fa1">La Classe Goal</span>
+
+Qui si trova il codice chiamato per gestire l'obiettivo. La classe dovrebbe estendere `AbstractGoal` o uno dei suoi eredi.
+Ogni obiettivo richiede:
+- Un ID Stringa Unico
+- Un codec che memorizza tutti i dati salvati
+- Varie funzioni che gestiscono casi differenti:
+  - `apply`: è la logica principale, chiamata la prima volta che l'obiettivo viene attivato (una volta per ciclo) e ogni volta che la funzione `shouldRebuild` è vera.
+  - `tick`: funzione opzionale, chiamata a ogni tick in cui l'obiettivo è attivo.
+  - `isCompleted`: la condizione di uscita; quando questa restituisce vero, il golem passa all'obiettivo successivo.
+  - `shouldRebuild`: a volte vuoi resettare l'obiettivo e cambiare i valori senza passare al successivo. Questa funzione forza l'obiettivo a richiamare `apply` senza progredire all'obiettivo seguente.
+  - `onComplete`: chiamata quando la funzione `isCompleted` restituisce vero. Usata principalmente per l'eventuale pulizia finale.
+  - `id`: L'id unico dell'obiettivo. Usato internamente e per alcuni asset.
+  - `clone`: Una funzione che restituisce una nuova istanza dell'obiettivo con gli stessi identici dati.
+  - `buildEventUI`: il nome è un po' improprio, ma gestisce tutto ciò che riguarda la GUI, inclusi: gestione eventi, impostazione valori dinamici, ecc.
+  - `spawnHighlight`: chiamata ogni tick mentre si impugna una tavoletta; il suo scopo principale è generare particelle sui blocchi rilevanti.
+  - `loadFromData`: gestisce il caricamento delle modifiche dai dati dell'interfaccia.
+
+Dopo aver creato la classe, devi registrare l'obiettivo. Per farlo, vai nella funzione di setup della tua mod e chiama AncientGolemancy.registerComponent(), passando nel costruttore l'ID dell'obiettivo, la classe e il codec.
+
+Fatto questo, l'Obiettivo esiste. Congratulazioni! Ora la parte "divertente": la GUI
+
+Devi creare un file ui in `UI/Custom/Pages/Goals` e chiamare il file `<Goal_Id>.ui`
+Ti suggerisco caldamente di usare i file esistenti come riferimento
+
+Devi anche aggiungere la localizzazione. La chiave di localizzazione dell'obiettivo è: `ag_server.goal.<Goal_Id>`
+
+Questo dovrebbe bastare. La Documentazione continuerà a essere aggiornata quando necessario
+
+---
+Progetto rilasciato sotto licenza [GNU AGPLv3](/Lalyan-Documentation/it/license/).

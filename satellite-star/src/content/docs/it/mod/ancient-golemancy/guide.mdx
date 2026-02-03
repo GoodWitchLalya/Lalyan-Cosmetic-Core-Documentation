@@ -1,0 +1,108 @@
+---
+title: Ancient Golemancy
+---
+
+## <span style="color:#b96ad9">Guida</span>
+<br/>
+<br/>
+
+Una mod di automazione per Hytale che permette di costruire soluzioni a problemi logistici, cercando di mantenere uno stile fedele al gioco vanilla.
+
+Questa pagina è rivolta a chi vuole imparare come funziona la mod.
+Questo non è un Tutorial per gli Addon!
+
+## <span style="color:#3598db">Introduzione</span>
+
+Mentre vaghi per il mondo, troverai una struttura con degli stendardi di una Civiltà Perduta e molti Cristalli Verdi. Quelle sono le antiche rovine.
+
+All'interno della struttura troverai il Banco Runico, usato per fabbricare tutti gli oggetti della mod, alcuni golem meccanici e vari forzieri con bottino.
+
+Per iniziare il tuo viaggio nella golemanzia, ti servono 2 cose:
+- Un golem (ovvio)
+- Una tavoletta runica (per ora, ne basterà una base)
+
+## <span style="color:#3598db">Obiettivi</span>
+
+La tavoletta runica è la parte più importante, poiché viene usata per assegnare gli obiettivi al golem.
+
+Premendo il tasto `azione secondaria`, aprirai l'interfaccia (GUI) della tavoletta. Qui vedrai un pulsante "+", che serve ad aggiungere un nuovo obiettivo.
+
+Dopo averlo premuto, vedrai un menu a tendina e un pulsante a forma di cestino. Il cestino rimuove la voce, il menu a tendina permette di selezionare l'obiettivo.
+Gli obiettivi vengono eseguiti in sequenza e a ciclo continuo: quando un obiettivo è terminato inizia il successivo; alla fine della lista, i compiti ricominciano dal primo!
+
+Per assegnare una lista di obiettivi al golem, premi `usa` mentre tieni in mano la tavoletta e guardi il golem.
+
+Esistono vari tipi di obiettivi, ecco una lista con la relativa documentazione:
+
+### <span style="color:#236fa1">Lascia Oggetti</span>
+
+Il golem lascerà a terra tutti gli oggetti nel suo inventario che corrispondono al filtro, depositandoli nella sua posizione attuale.
+
+Configurazione Interfaccia:
+- Checkbox IsWhitelist: commuta i filtri da blacklist a whitelist.
+- Pulsante FilterManager: apre la gestione filtri (vedi barra laterale).
+
+### <span style="color:#236fa1">Segui Proprietariə</span>
+
+Il golem seguirà il suo owner. L'owner' è definito come "l'ultimo giocatore che ha usato la tavoletta sul golem".
+
+L'interfaccia non ha configurazioni.
+
+### <span style="color:#236fa1">Raccogli Colture</span>
+
+Il golem proverà a raccogliere le colture nella posizione selezionata e metterà automaticamente gli oggetti nel suo inventario.
+
+Configurazione Interfaccia:
+- Pulsante Target: attiva la modalità selettore bersaglio nella tavoletta (vedi barra laterale).
+
+### <span style="color:#236fa1">Scava Area</span>
+
+Il golem scaverà tutti i blocchi compresi tra l'Angolo 1 e l'Angolo 2, con la profondità specificata. Se gli angoli sono a livelli Y differenti, verranno scavati tutti i blocchi in quell'area, poi il golem scaverà ulteriori strati verso il basso pari a "profondità - 1".
+
+Configurazione Interfaccia:
+- Pulsante Target Angolo 2: attiva la modalità selettore bersaglio (vedi barra laterale).
+- Profondità con campo di input: seleziona la profondità, sono ammessi solo numeri interi, valore minimo 1.
+- Checkbox IsWhitelist: commuta i filtri da blacklist a whitelist.
+- Pulsante FilterManager: apre la gestione filtri. Questi filtri sono significativi solo se l'oggetto selezionato contiene un blocco.
+- Pulsante Target Angolo 1: attiva la modalità selettore bersaglio (vedi barra laterale).
+
+### <span style="color:#236fa1">Sposta Oggetto</span>
+
+Il golem prenderà oggetti dal deposito di un blocco per metterli nel proprio inventario, o viceversa. Se il blocco è un banco di lavorazione, proverà ad attivarlo.
+
+Configurazione Interfaccia:
+- Checkbox Deposita: commuta tra prelevare (predefinito) e depositare (spuntato) oggetti.
+- Checkbox IsWhitelist: commuta i filtri da blacklist a whitelist.
+- Pulsante FilterManager: apre la gestione filtri (vedi barra laterale).
+- Pulsante Target: attiva la modalità selettore bersaglio (vedi barra laterale).
+
+### <span style="color:#236fa1">Muovi verso Blocco</span>
+
+Il golem calcolerà il percorso tra sé e l'obiettivo finale, e proverà a spostarsi verso il blocco bersaglio. Il pathfinding usa l'algoritmo A*, quindi dovrebbe essere in grado di aggirare gli ostacoli.
+
+Configurazione Interfaccia:
+- Pulsante Target: attiva la modalità selettore bersaglio nella tavoletta (vedi barra laterale).
+
+### <span style="color:#236fa1">Raccogli Oggetti</span>
+
+Il golem individuerà tutti gli oggetti a terra in un raggio d'azione attorno a sé e si sposterà verso di essi per raccoglierli e metterli nel proprio inventario.
+
+Configurazione Interfaccia:
+- Campo di input del Raggio: seleziona il raggio, massimo 1 cifra decimale, valore minimo 0.1, valore massimo 5 (espresso in blocchi).
+- Checkbox IsWhitelist: commuta i filtri da blacklist a whitelist.
+- Pulsante FilterManager: apre la gestione filtri (vedi barra laterale).
+
+
+## <span style="color:#3598db">Gestore dei filtri</span>
+
+La gestione filtri consiste in 2 pagine che gestiscono la configurazione dei filtri. Premendo il pulsante FilterManager "+", si aprirà un pannello laterale con un pulsante "+". Premendolo si aggiungerà uno slot filtro con l'oggetto predefinito "Rock_Stone".
+
+Cliccando con il tasto destro sul filtro lo eliminerai, mentre cliccando con il sinistro aprirai sotto di esso una lista di tutti gli oggetti del gioco. Il pannello degli oggetti ha una barra di ricerca. Cliccare su un oggetto lo imposterà come filtro, mentre passarci sopra con il mouse mostrerà il nome dell'oggetto.
+
+## <span style="color:#3598db">Modalità Selettore Bersaglio</span>
+
+Premendo su un pulsante "Target", la tavoletta passerà alla modalità selettore bersaglio e chiuderà l'interfaccia. In questa modalità, l'interfaccia non può essere aperta, ma cliccando su qualsiasi blocco si imposterà la posizione di quel blocco come bersaglio per l'obiettivo.
+Dopo aver selezionato un bersaglio, usando nuovamente la tavoletta si riprenderanno le normali funzioni dell'interfaccia.
+
+---
+Progetto rilasciato sotto licenza [GNU AGPLv3](/Lalyan-Documentation/it/license/).
