@@ -4,16 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d717d390-f33e-4030-b3c4-8666c3f9ec3c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/satellite-star/src/assets/mods/ancient-golemancy/showcase/20260203-1350-34.8758487.mp4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/satellite-star/src/assets/mods/ancient-golemancy/showcase/20260203-1424-22.4712716.mp4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/satellite-star/src/components/Youtube/VideoPlayer/en/VideoPlayer.astro" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/satellite-star/src/components/Youtube/VideoPlayer/it/VideoPlayer.astro" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/satellite-star/src/components/KofiWidget/en.astro" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/satellite-star/src/components/KofiWidget/it.astro" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/satellite-star/src/content/docs/en/mod/ancient-golemancy.mdx" beforeDir="false" afterPath="$PROJECT_DIR$/satellite-star/src/content/docs/en/mod/ancient-golemancy.mdx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/satellite-star/src/content/docs/it/mod/ancient-golemancy.mdx" beforeDir="false" afterPath="$PROJECT_DIR$/satellite-star/src/content/docs/it/mod/ancient-golemancy.mdx" afterDir="false" />
+    <list default="true" id="d717d390-f33e-4030-b3c4-8666c3f9ec3c" name="Changes" comment="Refactor Ko-fi widget and add videos to Ancient Golemancy&#10;&#10;- Refactor Ko-fi widget structure into `Unlanguaged` base and `Languaged` wrappers.&#10;- Add `VideoPlayer` component with aspect ratio and size validation.&#10;- Add showcase videos and section headers to Ancient Golemancy pages (EN/IT).&#10;- Update English and Italian index pages to use the new Ko-fi button component.">
+      <change beforePath="$PROJECT_DIR$/satellite-star/src/content/docs/en/mod/lalyan-cosmetic-core.mdx" beforeDir="false" afterPath="$PROJECT_DIR$/satellite-star/src/content/docs/en/mod/lalyan-cosmetic-core.mdx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/satellite-star/src/content/docs/it/mod/lalyan-cosmetic-core.mdx" beforeDir="false" afterPath="$PROJECT_DIR$/satellite-star/src/content/docs/it/mod/lalyan-cosmetic-core.mdx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,6 +66,13 @@
       <recent name="C:\Users\Reiko\IdeaProjects\Lalyan-Cosmetic-Core-Site\satellite-star\src\assets\mods\lalyan-cosmetic-core\showcase" />
       <recent name="C:\Users\Reiko\IdeaProjects\Lalyan-Cosmetic-Core-Site\satellite-star\src\assets\mods" />
     </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-30f59d01ecdd-2fc7cc6b9a17-intellij.indexing.shared.core-IU-253.30387.90" />
+      </set>
+    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="project-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -323,11 +323,18 @@
       <option name="project" value="LOCAL" />
       <updated>1770303973946</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="Refactor Ko-fi widget and add videos to Ancient Golemancy&#10;&#10;- Refactor Ko-fi widget structure into `Unlanguaged` base and `Languaged` wrappers.&#10;- Add `VideoPlayer` component with aspect ratio and size validation.&#10;- Add showcase videos and section headers to Ancient Golemancy pages (EN/IT).&#10;- Update English and Italian index pages to use the new Ko-fi button component.">
+      <option name="closed" value="true" />
+      <created>1770318515313</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1770318515313</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="init" />
     <MESSAGE value="Site completed" />
     <MESSAGE value="minor fix" />
     <MESSAGE value="Comment out Mods Index sidebar item" />
@@ -350,7 +357,9 @@
     <MESSAGE value="Remove Ancient Golemancy showcase icon&#10;&#10;- Delete `src/assets/mods/ancient-golemancy/showcase/icon.png`." />
     <MESSAGE value="Anchor .idea ignore pattern to root in .gitignore&#10;&#10;- Update `.gitignore` to use `/.idea/` instead of `.idea/`." />
     <MESSAGE value="Add Ancient Golemancy showcase assets&#10;&#10;- Add two MP4 video files and an icon to `src/assets/mods/ancient-golemancy/showcase/`." />
+    <MESSAGE value="Refactor components and update Ancient Golemancy showcase&#10;&#10;- Restructure Ko-fi widget into `Unlanguaged` and `Languaged` directories.&#10;- Implement `VideoPlayer` component with aspect ratio validation.&#10;- Add video showcase section and headers to Ancient Golemancy pages (EN/IT).&#10;- Update index pages to use the new Ko-fi component.&#10;- Add Ancient Golemancy showcase video assets." />
     <MESSAGE value="Add Ancient Golemancy showcase icon&#10;&#10;- Add `icon.png` to `src/assets/mods/ancient-golemancy/showcase/`." />
-    <option name="LAST_COMMIT_MESSAGE" value="Add Ancient Golemancy showcase icon&#10;&#10;- Add `icon.png` to `src/assets/mods/ancient-golemancy/showcase/`." />
+    <MESSAGE value="Refactor Ko-fi widget and add videos to Ancient Golemancy&#10;&#10;- Refactor Ko-fi widget structure into `Unlanguaged` base and `Languaged` wrappers.&#10;- Add `VideoPlayer` component with aspect ratio and size validation.&#10;- Add showcase videos and section headers to Ancient Golemancy pages (EN/IT).&#10;- Update English and Italian index pages to use the new Ko-fi button component." />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactor Ko-fi widget and add videos to Ancient Golemancy&#10;&#10;- Refactor Ko-fi widget structure into `Unlanguaged` base and `Languaged` wrappers.&#10;- Add `VideoPlayer` component with aspect ratio and size validation.&#10;- Add showcase videos and section headers to Ancient Golemancy pages (EN/IT).&#10;- Update English and Italian index pages to use the new Ko-fi button component." />
   </component>
 </project>
