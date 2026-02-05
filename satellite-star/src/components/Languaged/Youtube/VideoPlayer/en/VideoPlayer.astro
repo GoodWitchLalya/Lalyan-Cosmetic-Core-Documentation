@@ -1,0 +1,12 @@
+---
+const { 
+    width = 'none',
+    height = 'none',
+    aspect_ratio = 'none',
+    src
+} = Astro.props;
+
+import VideoPlayerUnlanguaged from '../../../../Unlanguaged/Youtube/VideoPlayer/VideoPlayer.astro';
+---
+
+<VideoPlayerUnlanguaged width={width} height={height} aspect_ratio={aspect_ratio} src={src} />

@@ -1,0 +1,18 @@
+---
+const { message = 'Support me on Ko-fi'} = Astro.props;
+---
+
+<script
+  type='text/javascript'
+  src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'
+  is:inline>
+</script>
+
+<script
+  type='text/javascript'
+  is:inline
+  define:vars={{ message }}>
+  
+  kofiwidget2.init(message, '#72a4f2', 'B0B31TFUAO');
+  kofiwidget2.draw();
+</script>

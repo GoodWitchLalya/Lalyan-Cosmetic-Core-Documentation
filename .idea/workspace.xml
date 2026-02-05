@@ -4,7 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d717d390-f33e-4030-b3c4-8666c3f9ec3c" name="Changes" comment="Remove Ancient Golemancy showcase icon&#10;&#10;- Delete `src/assets/mods/ancient-golemancy/showcase/icon.png`." />
+    <list default="true" id="d717d390-f33e-4030-b3c4-8666c3f9ec3c" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/satellite-star/src/assets/mods/ancient-golemancy/showcase/20260203-1350-34.8758487.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/satellite-star/src/assets/mods/ancient-golemancy/showcase/20260203-1424-22.4712716.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/satellite-star/src/components/Youtube/VideoPlayer/en/VideoPlayer.astro" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/satellite-star/src/components/Youtube/VideoPlayer/it/VideoPlayer.astro" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/satellite-star/src/components/KofiWidget/en.astro" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/satellite-star/src/components/KofiWidget/it.astro" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/satellite-star/src/content/docs/en/mod/ancient-golemancy.mdx" beforeDir="false" afterPath="$PROJECT_DIR$/satellite-star/src/content/docs/en/mod/ancient-golemancy.mdx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/satellite-star/src/content/docs/it/mod/ancient-golemancy.mdx" beforeDir="false" afterPath="$PROJECT_DIR$/satellite-star/src/content/docs/it/mod/ancient-golemancy.mdx" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -57,11 +67,11 @@
       <recent name="C:\Users\Reiko\IdeaProjects\Lalyan-Cosmetic-Core-Site\satellite-star\src\content\docs\it\mod\lalyan-cosmetic-core" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\Users\Reiko\Progetti\IdeaProjects\Lalyan-Cosmetic-Core-Site\satellite-star\src\assets\mods\ancient-golemancy\showcase" />
       <recent name="E:\Users\Reiko\Progetti\IdeaProjects\Lalyan-Cosmetic-Core-Site\satellite-star\src\components\KofiWidget" />
       <recent name="C:\Users\Reiko\IdeaProjects\Lalyan-Cosmetic-Core-Site\satellite-star\src\assets\mods\ancient-golemancy\showcase" />
       <recent name="C:\Users\Reiko\IdeaProjects\Lalyan-Cosmetic-Core-Site\satellite-star\src\assets\mods\lalyan-cosmetic-core\showcase" />
       <recent name="C:\Users\Reiko\IdeaProjects\Lalyan-Cosmetic-Core-Site\satellite-star\src\assets\mods" />
-      <recent name="C:\Users\Reiko\IdeaProjects\Lalyan-Cosmetic-Core-Site\satellite-star\src\content\docs\en" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="project-level" UseSingleDictionary="true" transferred="true" />
@@ -281,7 +291,39 @@
       <option name="project" value="LOCAL" />
       <updated>1770303691021</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="Remove Ancient Golemancy showcase icon&#10;&#10;- Delete `src/assets/mods/ancient-golemancy/showcase/icon.png`.">
+      <option name="closed" value="true" />
+      <created>1770303715066</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1770303715066</updated>
+    </task>
+    <task id="LOCAL-00028" summary="Remove Ancient Golemancy showcase icon&#10;&#10;- Delete `src/assets/mods/ancient-golemancy/showcase/icon.png`.">
+      <option name="closed" value="true" />
+      <created>1770303716436</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1770303716436</updated>
+    </task>
+    <task id="LOCAL-00029" summary="Anchor .idea ignore pattern to root in .gitignore&#10;&#10;- Update `.gitignore` to use `/.idea/` instead of `.idea/`.">
+      <option name="closed" value="true" />
+      <created>1770303893105</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1770303893105</updated>
+    </task>
+    <task id="LOCAL-00030" summary="Add Ancient Golemancy showcase icon&#10;&#10;- Add `icon.png` to `src/assets/mods/ancient-golemancy/showcase/`.">
+      <option name="closed" value="true" />
+      <created>1770303973946</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1770303973946</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -306,6 +348,9 @@
     <MESSAGE value="Add .idea to .gitignore&#10;&#10;- Add `.idea/` to `.gitignore`." />
     <MESSAGE value="Refactor KofiWidget components and update site configuration&#10;&#10;- Rename `KofiWidget` components to `en.astro` and `it.astro` and update imports in index pages.&#10;- Add `/kofi` redirect in `astro.config.mjs`.&#10;- Fix typo in Italian index page title.&#10;- Remove unused Ancient Golemancy showcase icon." />
     <MESSAGE value="Remove Ancient Golemancy showcase icon&#10;&#10;- Delete `src/assets/mods/ancient-golemancy/showcase/icon.png`." />
-    <option name="LAST_COMMIT_MESSAGE" value="Remove Ancient Golemancy showcase icon&#10;&#10;- Delete `src/assets/mods/ancient-golemancy/showcase/icon.png`." />
+    <MESSAGE value="Anchor .idea ignore pattern to root in .gitignore&#10;&#10;- Update `.gitignore` to use `/.idea/` instead of `.idea/`." />
+    <MESSAGE value="Add Ancient Golemancy showcase assets&#10;&#10;- Add two MP4 video files and an icon to `src/assets/mods/ancient-golemancy/showcase/`." />
+    <MESSAGE value="Add Ancient Golemancy showcase icon&#10;&#10;- Add `icon.png` to `src/assets/mods/ancient-golemancy/showcase/`." />
+    <option name="LAST_COMMIT_MESSAGE" value="Add Ancient Golemancy showcase icon&#10;&#10;- Add `icon.png` to `src/assets/mods/ancient-golemancy/showcase/`." />
   </component>
 </project>

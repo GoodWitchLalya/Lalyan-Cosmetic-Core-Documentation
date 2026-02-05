@@ -1,0 +1,76 @@
+---
+const { 
+    src,                  // Required: The video URL
+    width = '100%',       // Default if not provided
+    height = 'auto',      // Default if not provided
+    aspect_ratio = '16:9' // Default if not provided
+} = Astro.props;
+
+// 1. Define Regex for validation
+// ------------------------------
+// Accepts formats: "number:number" or "number/number" (e.g., 16:9, 4/3)
+// The anchors ^ and $ ensure exact matching from start to end
+const ratioRegex = /^\d+[:/]\d+$/; 
+
+// Accepts: raw numbers, pixels (px), or percentages (%) (e.g., 100, 100px, 50%)
+// (\.\d+)? handles decimal numbers like 100.5
+const sizeRegex = /^\d+(\.\d+)?(px|%)?$/; 
+
+
+// 2. Validation and Normalization Logic
+// -------------------------------------
+
+// --- ASPECT RATIO ---
+let safeRatio;
+if (ratioRegex.test(aspect_ratio)) {
+    // If valid, ensure it uses the slash '/' syntax required by CSS
+    // (CSS 'aspect-ratio' property does not accept colons ':')
+    safeRatio = aspect_ratio.toString().replace(':', '/');
+} else {
+    // If invalid (e.g., random text), fallback to default
+    safeRatio = '16/9';
+}
+
+// --- WIDTH ---
+let safeWidth;
+// Convert input to string explicitly to prevent errors if a raw number is passed (e.g., width={500})
+if (sizeRegex.test(String(width))) {
+    safeWidth = width;
+} else {
+    safeWidth = '100%';
+}
+
+// --- HEIGHT ---
+let safeHeight;
+// Convert to string here as well for safety
+if (sizeRegex.test(String(height))) {
+    safeHeight = height;
+} else {
+    // If using aspect-ratio, default height must be 'auto' 
+    // to allow the browser to calculate it proportionally based on width.
+    safeHeight = 'auto';
+}
+---
+
+<iframe
+    src={src}
+    class="responsive-player"
+    title="YouTube video player"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    referrerpolicy="strict-origin-when-cross-origin"
+    allowfullscreen
+    style={`aspect-ratio: ${safeRatio};`} 
+>
+</iframe>
+
+<style define:vars={{ safeWidth, safeHeight }}>
+  .responsive-player {
+    /* Apply the validated variables to the CSS */
+    width: var(--safeWidth);
+    height: var(--safeHeight);
+    
+    display: block;
+    border-radius: 8px;
+  }
+</style>
