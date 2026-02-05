@@ -4,14 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d717d390-f33e-4030-b3c4-8666c3f9ec3c" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/satellite-star/astro.config.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/satellite-star/astro.config.mjs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/satellite-star/src/components/KofiWidget/KofiWidget_en.astro" beforeDir="false" afterPath="$PROJECT_DIR$/satellite-star/src/components/KofiWidget/en.astro" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/satellite-star/src/components/KofiWidget/KofiWidget_it.astro" beforeDir="false" afterPath="$PROJECT_DIR$/satellite-star/src/components/KofiWidget/it.astro" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/satellite-star/src/content/docs/en/index.mdx" beforeDir="false" afterPath="$PROJECT_DIR$/satellite-star/src/content/docs/en/index.mdx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/satellite-star/src/content/docs/it/index.mdx" beforeDir="false" afterPath="$PROJECT_DIR$/satellite-star/src/content/docs/it/index.mdx" afterDir="false" />
-    </list>
+    <list default="true" id="d717d390-f33e-4030-b3c4-8666c3f9ec3c" name="Changes" comment="Remove Ancient Golemancy showcase icon&#10;&#10;- Delete `src/assets/mods/ancient-golemancy/showcase/icon.png`." />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -240,7 +233,55 @@
       <option name="project" value="LOCAL" />
       <updated>1770214008717</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="Add .idea to .gitignore&#10;&#10;- Add `.idea/` to `.gitignore`.">
+      <option name="closed" value="true" />
+      <created>1770303609938</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1770303609938</updated>
+    </task>
+    <task id="LOCAL-00022" summary="Refactor KofiWidget components and update site configuration&#10;&#10;- Rename `KofiWidget` components to `en.astro` and `it.astro` and update imports in index pages.&#10;- Add `/kofi` redirect in `astro.config.mjs`.&#10;- Fix typo in Italian index page title.&#10;- Remove unused Ancient Golemancy showcase icon.">
+      <option name="closed" value="true" />
+      <created>1770303658967</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1770303658967</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Remove Ancient Golemancy showcase icon&#10;&#10;- Delete `src/assets/mods/ancient-golemancy/showcase/icon.png`.">
+      <option name="closed" value="true" />
+      <created>1770303680554</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1770303680554</updated>
+    </task>
+    <task id="LOCAL-00024" summary="Remove Ancient Golemancy showcase icon&#10;&#10;- Delete `src/assets/mods/ancient-golemancy/showcase/icon.png`.">
+      <option name="closed" value="true" />
+      <created>1770303689398</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1770303689398</updated>
+    </task>
+    <task id="LOCAL-00025" summary="Remove Ancient Golemancy showcase icon&#10;&#10;- Delete `src/assets/mods/ancient-golemancy/showcase/icon.png`.">
+      <option name="closed" value="true" />
+      <created>1770303690778</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1770303690778</updated>
+    </task>
+    <task id="LOCAL-00026" summary="Remove Ancient Golemancy showcase icon&#10;&#10;- Delete `src/assets/mods/ancient-golemancy/showcase/icon.png`.">
+      <option name="closed" value="true" />
+      <created>1770303691021</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1770303691021</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -262,6 +303,9 @@
     <MESSAGE value="Add Issues section to mod documentation pages&#10;&#10;- Add &quot;Issues&quot; section to Ancient Golemancy and Lalyan Cosmetic Core pages.&#10;- Include contact information and bug reporting guidelines in English and Italian." />
     <MESSAGE value="Add email subject guidelines to mod documentation&#10;&#10;- Update Ancient Golemancy and Lalyan Cosmetic Core pages (EN/IT).&#10;- Specify `Mod-issues` as the required email subject for bug reports." />
     <MESSAGE value="Replace Ko-fi LinkCard with interactive widget on index pages&#10;&#10;- Create `KofiWidget_en` and `KofiWidget_it` components.&#10;- Replace static support LinkCard with the new widget in English and Italian index pages." />
-    <option name="LAST_COMMIT_MESSAGE" value="Replace Ko-fi LinkCard with interactive widget on index pages&#10;&#10;- Create `KofiWidget_en` and `KofiWidget_it` components.&#10;- Replace static support LinkCard with the new widget in English and Italian index pages." />
+    <MESSAGE value="Add .idea to .gitignore&#10;&#10;- Add `.idea/` to `.gitignore`." />
+    <MESSAGE value="Refactor KofiWidget components and update site configuration&#10;&#10;- Rename `KofiWidget` components to `en.astro` and `it.astro` and update imports in index pages.&#10;- Add `/kofi` redirect in `astro.config.mjs`.&#10;- Fix typo in Italian index page title.&#10;- Remove unused Ancient Golemancy showcase icon." />
+    <MESSAGE value="Remove Ancient Golemancy showcase icon&#10;&#10;- Delete `src/assets/mods/ancient-golemancy/showcase/icon.png`." />
+    <option name="LAST_COMMIT_MESSAGE" value="Remove Ancient Golemancy showcase icon&#10;&#10;- Delete `src/assets/mods/ancient-golemancy/showcase/icon.png`." />
   </component>
 </project>
