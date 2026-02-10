@@ -42,6 +42,7 @@ export default defineConfig({
                  translations: { it: 'Lalyan Cosmetic Core'},
                  items: [
                     { label: 'Showcase', translations: { it: 'Presentazione'}, slug: 'mod/lalyan-cosmetic-core' },
+                    { label: 'Changelog', translations: { it: 'Changelog'}, slug: 'mod/lalyan-cosmetic-core/changelog' },
                     { label: 'Documentation', translations: { it: 'Documentazione'}, slug: 'mod/lalyan-cosmetic-core/documentation' },
                     { label: 'Resources', translations: { it: 'Risorse'}, slug: 'mod/lalyan-cosmetic-core/resources' },
                  ],
@@ -53,6 +54,7 @@ export default defineConfig({
                  items: [
                     { label: 'Showcase', translations: { it: 'Presentazione'}, slug: 'mod/ancient-golemancy' },
                     { label: 'Lore', translations: { it: 'Lore'}, slug: 'mod/ancient-golemancy/lore' },
+                    { label: 'Changelog', translations: { it: 'Changelog'}, slug: 'mod/ancient-golemancy/changelog' },
                     { label: 'Guide', translations: { it: 'Guida'}, slug: 'mod/ancient-golemancy/guide' },
                     { label: 'Documentation', translations: { it: 'Documentazione'}, slug: 'mod/ancient-golemancy/documentation' },
                     { label: 'Resources', translations: { it: 'Risorse'}, slug: 'mod/ancient-golemancy/resources' },

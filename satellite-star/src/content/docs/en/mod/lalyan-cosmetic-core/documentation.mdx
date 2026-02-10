@@ -165,9 +165,9 @@ They will be seen by the API as variants of the same cosmetic, so they will impl
 
 ## <span style="color:#3598db">Colors (optional)</span>
 
-<span style="color:#e03e2d">!Warning! Variants and colors are mutually exclusive!</span>
-
-<span style="color:#e03e2d">!Warning! Hair extensions cannot have variants nor colors, they changes according to the hairstyle!</span>
+> <span style="color:#e03e2d">!Warning! Variants and colors are mutually exclusive!</span>
+<br/>
+> <span style="color:#e03e2d">!Warning! Hair extensions cannot have variants nor colors, they changes according to the hairstyle!</span>
 
 This API also allows you to add multiple colors to a cosmetic!
 
@@ -218,18 +218,18 @@ Within the JSON file, you are able to change the name and path of the model, tex
 
 ```
 {
-    "model": "Resources/Cosmetics/Head/Propeller_Hat/Propeller_Hat.blockymodel",
-    "texture": "Resources/Cosmetics/Head/Propeller_Hat/Propeller_Hat.png",
-    "icon": "Resources/Cosmetics/Head/Propeller_Hat/Propeller_Hat_Icon.png",
-    "slot_overrides": [
+    "Model": "Resources/Cosmetics/Head/Propeller_Hat/Propeller_Hat.blockymodel",
+    "Texture": "Resources/Cosmetics/Head/Propeller_Hat/Propeller_Hat.png",
+    "Icon": "Resources/Cosmetics/Head/Propeller_Hat/Propeller_Hat_Icon.png",
+    "Slot_overrides": [
         //Insert slots here, for example "Head", "Capes" etc
     ],
-    "alternatives": {
+    "Alternatives": {
         //THESE 2 ARE MUTUALLY EXCLUSIVE, YOU EITHER HAVE VARIANTS OR COLORS!!!
         //Choice 1 (Colors)
-        "gradient_set": "Hair",
+        "Gradient_set": "Hair",
         //Choice 2 (Variants)
-        "variants": {
+        "Variants": {
             "Variant": {
               "texture": "Resources/Cosmetics/Head/Propeller_Hat/Variant/Variant.png",
               "icon": "Resources/Cosmetics/Head/Propeller_Hat/Variant/Variant_Icon.png"
@@ -239,31 +239,31 @@ Within the JSON file, you are able to change the name and path of the model, tex
 }
 ```
 
-**"model"** Is the path of the base cosmetic model and any variants.
+**"Model"** Is the path of the base cosmetic model and any variants.
 
-**"texture"** Is the path of the base cosmetic texture and any variants.
+**"Texture"** Is the path of the base cosmetic texture and any variants.
 
-**"icon"** Is the path of the base cosmetic icon.
+**"Icon"** Is the path of the base cosmetic icon.
 
-**"alternatives"** Defines that the cosmetic has 1 of 2 alternative styles
+**"Alternatives"** Defines that the cosmetic has 1 of 2 alternative styles
 
 ### <span style="color:#236fa1">Variant Alternative</span>
 
-**"alternatives" > "variants"** Announces the presence of variants that will be listed.
+**"Alternatives" > "Variants"** Announces the presence of variants that will be listed.
 
-**"alternatives" > "variants" > "variant1Name"** Will be replaced with the name of the first variant.
+**"Alternatives" > "Variants" > "Variant1Name"** Will be replaced with the name of the first variant.
 
-**"alternatives" > "variants" > "variant2Name"** Will be replaced with the name of the second variant.
+**"Alternatives" > "Variants" > "Variant2Name"** Will be replaced with the name of the second variant.
 
 Inside the variant names mentioned above are the definitions of the variant components.
 
-**"alternatives" > "variants" > "variantName" > "texture"** Is the path of the texture of the variant in question.
+**"Alternatives" > "Variants" > "VariantName" > "Texture"** Is the path of the texture of the variant in question.
 
-**"alternatives" > "variants" > "variantName" > "icon"** Is the path of the icon of the variant in question.
+**"Alternatives" > "Variants" > "VariantName" > "Icon"** Is the path of the icon of the variant in question.
 
 ### <span style="color:#236fa1">Color Alternative</span>
 
-**"alternatives" > "gradient\_set"** Tells the game which gradient set to use
+**"Alternatives" > "Gradient\_set"** Tells the game which gradient set to use
 
 Gradient List:
 
@@ -280,6 +280,66 @@ Gradient List:
 *   `Rotten_Fabric`
 *   `Shiny_Fabric`
 *   `Skin`
+
+## <span style="color:#3598db">Permissions (optional)</span>
+
+permissions can be enabled trough the <a href="#enable-permissions">configuration file</a>.
+
+The permissions are made like this: `lalyancosmeticcore.[FIELD].[ID].[ACTION]`
+
+##### <span style="color:#236fa1">Vanilla</span>
+If you aren't using luckperms the mod will automatically use the vanilla permission's system.
+
+##### <span style="color:#236fa1">Luckperms</span>
+If you are using luckperms the mod will automatically use the luckperms permission's system.
+
+### <span style="color:#236fa1">Fields</span>
+The fields are permissions' groups.
+
+##### <span style="color:#236fa1">Cosmetic</span>
+the `cosmetic` field is for get the permissions for a specific cosmetic.
+
+It's written like this: `lalyancosmeticcore.cosmetic.[Cosmetic_ID].[ACTION]`.
+
+A few examples:
+> `lalyancosmeticcore.cosmetic.GoodWitchLalya:ExampleCosmetics#Propeller_Hat.use`<br/>
+> `lalyancosmeticcore.cosmetic.GoodWitchLalya:ExampleCosmetics#Rainbow_Shirt.use`
+
+If you want to know how's written a permission for a specific cosmetic you can sue `/cosmetic list --permissions` to get a list of all of the permissions
+
+##### <span style="color:#236fa1">Slot</span>
+the `slot` field is for get the permissions for a specific slot and all of its cosmetics.
+
+It's written like this: `lalyancosmeticcore.slot.[Slot_ID].[ACTION]`.
+
+A few examples:
+> `lalyancosmeticcore.slot.Head.use`<br/>
+> `lalyancosmeticcore.slot.Overpants.use`
+
+the list with all of the slots: <a href="#characters">Here</a>(character), <a href="#cosmetics">Here</a>(cosmetic)
+
+### <span style="color:#236fa1">Action</span>
+at the moment ther's only one action, `use`.
+
+##### <span style="color:#236fa1">Use</span>
+
+this permission decides if a player can view and set a cosmetic or a view slot.
+
+## <span style="color:#3598db">Configuration (optional)</span>
+
+At the moment the configuration file only has the `Enable Permissions` voice.
+
+### <span style="color:#236fa1">Enable Permissions</span>
+
+The configuration for the **Enable Permissions** value works this way:
+
+If the value is **true**: <br/>
+The permission system will be enabled letting a player use a cosmetic only if they have the right permission.
+
+If the value is **false**: <br/>
+The API will work as it always has: Everyone can use everything.
+
+This value is set to **false** by default.
 
 ---
 Project released under license [GNU AGPLv3](/Lalyan-Projects/en/license/).

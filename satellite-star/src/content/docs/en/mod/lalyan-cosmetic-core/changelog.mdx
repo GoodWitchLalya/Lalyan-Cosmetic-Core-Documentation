@@ -1,0 +1,41 @@
+---
+title: Lalyan Cosmetic Core
+---
+
+## <span style="color:#b96ad9">Changelog</span>
+<br/>
+<br/>
+
+### Version 2.0.0
+* **Remade** the entire **cosmetic system**.
+* **Modified** sightly how the JSON file for cosmetics works (<a href="#note_1"><span style="color:#b96ad9">**Note 1**</span></a>).
+* **Added** a new **permissions** system.
+* **Added** optional compatibility with **luckperms**.
+* **Added** optional compatibility with **Wardrobe API** plugins.
+* **Added** a **Config** file with a permissions' option (<a href="#note_2"><span style="color:#b96ad9">**Note 2**</span></a>).
+* **Fixed** some minor bugs.
+
+##### <span style="color:#b96ad9" id="note_1">Note 1</span>
+Now you've to put the first letter of a key in upper case.<br/>
+Example:
+
+old:
+> "texture": "link"
+
+new:
+> "Texture": "link"
+
+more info [here](/Lalyan-Projects/en/mod/lalyan-cosmetic-core/documentation/#advanced-cosmetics-optional), this is how it works now.
+
+##### <span style="color:#b96ad9" id="note_2">Note 2</span>
+The configuration for the **Permissions** value works this way:
+
+If the value is **true**: <br/>
+The permission system will be used letting a player use a cosmetic only if they have the right permission.
+
+If the value is **false**: <br/>
+The API will work as it always has: Everyone can use everything.
+
+This value is set to **false** by default.
+
+more info [here](/Lalyan-Projects/en/mod/lalyan-cosmetic-core/documentation/#permissions-optional).

@@ -4,9 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d717d390-f33e-4030-b3c4-8666c3f9ec3c" name="Changes" comment="Refactor Ko-fi widget and add videos to Ancient Golemancy&#10;&#10;- Refactor Ko-fi widget structure into `Unlanguaged` base and `Languaged` wrappers.&#10;- Add `VideoPlayer` component with aspect ratio and size validation.&#10;- Add showcase videos and section headers to Ancient Golemancy pages (EN/IT).&#10;- Update English and Italian index pages to use the new Ko-fi button component.">
-      <change beforePath="$PROJECT_DIR$/satellite-star/src/content/docs/en/mod/lalyan-cosmetic-core.mdx" beforeDir="false" afterPath="$PROJECT_DIR$/satellite-star/src/content/docs/en/mod/lalyan-cosmetic-core.mdx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/satellite-star/src/content/docs/it/mod/lalyan-cosmetic-core.mdx" beforeDir="false" afterPath="$PROJECT_DIR$/satellite-star/src/content/docs/it/mod/lalyan-cosmetic-core.mdx" afterDir="false" />
+    <list default="true" id="d717d390-f33e-4030-b3c4-8666c3f9ec3c" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/satellite-star/src/content/docs/en/mod/ancient-golemancy/changelog.mdx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/satellite-star/src/content/docs/en/mod/lalyan-cosmetic-core/changelog.mdx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/satellite-star/src/content/docs/it/mod/ancient-golemancy/changelog.mdx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/satellite-star/src/content/docs/it/mod/lalyan-cosmetic-core/changelog.mdx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/satellite-star/astro.config.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/satellite-star/astro.config.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/satellite-star/src/content/docs/en/mod/lalyan-cosmetic-core/documentation.mdx" beforeDir="false" afterPath="$PROJECT_DIR$/satellite-star/src/content/docs/en/mod/lalyan-cosmetic-core/documentation.mdx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/satellite-star/src/content/docs/it/mod/lalyan-cosmetic-core/documentation.mdx" beforeDir="false" afterPath="$PROJECT_DIR$/satellite-star/src/content/docs/it/mod/lalyan-cosmetic-core/documentation.mdx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,17 +53,17 @@
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;E:/Users/Reiko/Progetti/IdeaProjects/Lalyan-Cosmetic-Core-Site/satellite-star/src/components&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/Users/Reiko/Progetti/IdeaProjects/Lalyan-Cosmetic-Core-Site/satellite-star/src/content/docs/en/mod/ancient-golemancy&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Users\Reiko\Progetti\IdeaProjects\Lalyan-Cosmetic-Core-Site\satellite-star\src\content\docs\en\mod\ancient-golemancy" />
+      <recent name="E:\Users\Reiko\Progetti\IdeaProjects\Lalyan-Cosmetic-Core-Site\satellite-star\src\content\docs\it\mod\ancient-golemancy" />
+      <recent name="E:\Users\Reiko\Progetti\IdeaProjects\Lalyan-Cosmetic-Core-Site\satellite-star\src\content\docs\it\mod\lalyan-cosmetic-core" />
       <recent name="E:\Users\Reiko\Progetti\IdeaProjects\Lalyan-Cosmetic-Core-Site\satellite-star\src\components" />
       <recent name="C:\Users\Reiko\IdeaProjects\Lalyan-Cosmetic-Core-Site\satellite-star\src\content\docs\it\mod" />
-      <recent name="C:\Users\Reiko\IdeaProjects\Lalyan-Cosmetic-Core-Site\satellite-star\src\assets\mods\ancient-golemancy\showcase" />
-      <recent name="C:\Users\Reiko\IdeaProjects\Lalyan-Cosmetic-Core-Site\satellite-star\src\content\docs\en\mod\ancient-golemancy" />
-      <recent name="C:\Users\Reiko\IdeaProjects\Lalyan-Cosmetic-Core-Site\satellite-star\src\content\docs\it\mod\lalyan-cosmetic-core" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\Users\Reiko\Progetti\IdeaProjects\Lalyan-Cosmetic-Core-Site\satellite-star\src\assets\mods\ancient-golemancy\showcase" />
@@ -331,11 +337,21 @@
       <option name="project" value="LOCAL" />
       <updated>1770318515313</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="Add Images header to Lalyan Cosmetic Core pages&#10;&#10;- Add styled &quot;Images&quot; and &quot;Immagini&quot; headers to Lalyan Cosmetic Core pages (EN/IT).">
+      <option name="closed" value="true" />
+      <created>1770318631962</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1770318631962</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="astro.config.mjs" />
+  </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Site completed" />
     <MESSAGE value="minor fix" />
     <MESSAGE value="Comment out Mods Index sidebar item" />
     <MESSAGE value="minor changes" />
@@ -360,6 +376,7 @@
     <MESSAGE value="Refactor components and update Ancient Golemancy showcase&#10;&#10;- Restructure Ko-fi widget into `Unlanguaged` and `Languaged` directories.&#10;- Implement `VideoPlayer` component with aspect ratio validation.&#10;- Add video showcase section and headers to Ancient Golemancy pages (EN/IT).&#10;- Update index pages to use the new Ko-fi component.&#10;- Add Ancient Golemancy showcase video assets." />
     <MESSAGE value="Add Ancient Golemancy showcase icon&#10;&#10;- Add `icon.png` to `src/assets/mods/ancient-golemancy/showcase/`." />
     <MESSAGE value="Refactor Ko-fi widget and add videos to Ancient Golemancy&#10;&#10;- Refactor Ko-fi widget structure into `Unlanguaged` base and `Languaged` wrappers.&#10;- Add `VideoPlayer` component with aspect ratio and size validation.&#10;- Add showcase videos and section headers to Ancient Golemancy pages (EN/IT).&#10;- Update English and Italian index pages to use the new Ko-fi button component." />
-    <option name="LAST_COMMIT_MESSAGE" value="Refactor Ko-fi widget and add videos to Ancient Golemancy&#10;&#10;- Refactor Ko-fi widget structure into `Unlanguaged` base and `Languaged` wrappers.&#10;- Add `VideoPlayer` component with aspect ratio and size validation.&#10;- Add showcase videos and section headers to Ancient Golemancy pages (EN/IT).&#10;- Update English and Italian index pages to use the new Ko-fi button component." />
+    <MESSAGE value="Add Images header to Lalyan Cosmetic Core pages&#10;&#10;- Add styled &quot;Images&quot; and &quot;Immagini&quot; headers to Lalyan Cosmetic Core pages (EN/IT)." />
+    <option name="LAST_COMMIT_MESSAGE" value="Add Images header to Lalyan Cosmetic Core pages&#10;&#10;- Add styled &quot;Images&quot; and &quot;Immagini&quot; headers to Lalyan Cosmetic Core pages (EN/IT)." />
   </component>
 </project>

@@ -1,0 +1,41 @@
+---
+title: Lalyan Cosmetic Core
+---
+
+## <span style="color:#b96ad9">Changelog</span>
+<br/>
+<br/>
+
+### Version 2.0.0
+* **Rifatto** l'intero **sistema di cosmetici**.
+* **Modificato** leggermente il funzionalemto del file json per i cosmetici (<a href="#note_1"><span style="color:#b96ad9">**Nota 1**</span></a>).
+* **Aggiunto** un nuovo sistema di **permessi**.
+* **Aggiunta** compatibbilità opzionale con **luckperms**.
+* **Aggiunto** compatibbilità opzionale con **Wardrobe API**.
+* **Aggiunto** un file **Config** con l'opzione per abilitare i permessi (<a href="#note_2"><span style="color:#b96ad9">**Nota 2**</span></a>).
+* **Risolti** alcuni bugs minori.
+
+##### <span style="color:#b96ad9" id="note_1">Nota 1</span>
+Ora devi mettere la prima lettera di una chiave con l'iniziale maiuscola.<br/>
+Esempio:
+
+vecchio:
+> "texture": "link"
+
+nuovo:
+> "Texture": "link"
+
+Ulteriori informazioni [qui](/Lalyan-Projects/it/mod/lalyan-cosmetic-core/documentation/#cosmetici-avanzati-opzionale), Così è come funziona adesso.
+
+##### <span style="color:#b96ad9" id="note_2">Nota 2</span>
+La configurazione per il valore **Permissions** funziona così:
+
+Se il valore è **true**: <br/>
+Il sistema di permessi entrerà in gioco permettendo di vedere ed usare un dato cosmetico solamente se si ha il permesso necessario.
+
+Se il valore è **false**: <br/>
+L'API funziona come ha sempre fatto: puoi usare tutto.
+
+Il valore di base è impostato su **false**.
+
+Ulteriori informazioni [qui](/Lalyan-Projects/it/mod/lalyan-cosmetic-core/documentation/#permessi-opzionale).
