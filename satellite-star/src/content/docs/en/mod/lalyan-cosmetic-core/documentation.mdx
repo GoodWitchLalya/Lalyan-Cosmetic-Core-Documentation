@@ -30,6 +30,7 @@ The plugin has some commands that are mainly for testing purposes:
 *   `/cosmetic change` manually opens the Cosmetic Customization UI. Does not require permissions
 
 *   `/cosmetic list` prints in chat all loaded cosmetic ids. Requires OP
+        `--permissions` prints all the parameters as their relative permissions.
 
 *   `/cosmetic reload` manually reloads all cosmetics. Requires OP
 
@@ -142,7 +143,7 @@ They will be seen by the API as variants of the same cosmetic, so they will impl
 
 ## <span style="color:#3598DB;">Colors (optional)</span>
 
-<span style="color:#E03E2D;">!Warning! Variants and colors are mutually exclusive!</span>
+<span style="color:#E03E2D;">!Warning! Variants and colors are mutually exclusive!</span> <br/>
 
 <span style="color:#E03E2D;">!Warning! Hair extensions cannot have variants nor colors, they change according to the hairstyle!</span>
 
@@ -301,12 +302,12 @@ Slot json schema:
 }
 ```
 
-`Name`: The name to display when hovering over the button, also used when assigning it to a cosmetic <br>
-`Icon`: The icon of the button <br>
-`SelectedIcon`: The icon of the button used when the slot is the current one being displayed <br>
-`TopLevelCategory`: The category that will be assigned to the slot (see above) <br>
-`Camera`: The camera settings used when this slot is selected <br>
-`CanVanish`: Whether the slot has a vanish button (Faces is the only "vanilla" one that doesn't) <br>
+`Name`: The name to display when hovering over the button, also used when assigning it to a cosmetic <br/>
+`Icon`: The icon of the button <br/>
+`SelectedIcon`: The icon of the button used when the slot is the current one being displayed <br/>
+`TopLevelCategory`: The category that will be assigned to the slot (see above) <br/>
+`Camera`: The camera settings used when this slot is selected <br/>
+`CanVanish`: Whether the slot has a vanish button (Faces is the only "vanilla" one that doesn't) <br/>
 
 ## <span style="color:#3598db">Permissions (optional)</span>
 
