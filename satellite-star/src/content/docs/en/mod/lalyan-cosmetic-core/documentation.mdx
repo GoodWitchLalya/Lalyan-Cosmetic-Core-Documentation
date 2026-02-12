@@ -23,23 +23,47 @@ The GUI provides an easy way to select cosmetics and cosmetic variants. Left-cli
 
 ## <span style="color:#3598DB;">Commands</span>
 
-The plugin has some commands that are mainly for testing purposes:
+The plugin includes several commands, primarily for testing purposes:
 
-*   `/cosmetic apply <CosmeticId> [override]` manually applies a certain cosmetic defined by `CosmeticId`, `override` is optional, default is `yes [other value is no]`, determines whether all other cosmetics of its type should be removed. Requires OP
+* `/cosmetic apply <Cosmetic_ID> [Override]` – Manually applies a specific cosmetic. The `[Override]` parameter is optional (default is `yes`; other value is `no`) and determines whether all other cosmetics of that type should be removed. **Requires OP.**
+* `/cosmetic change` – Opens the Cosmetic Customization UI. **Does not require permissions.**
+* `/cosmetic list` – Prints all loaded cosmetic IDs in the chat. **Requires OP.** Use `--permissions` to print all cosmetics alongside their relative permissions.
+* `/cosmetic reload` – Manually reloads all cosmetics. **Requires OP.**
+* `/cosmetic clear` – Removes all custom cosmetics and resets the default skin. **Requires OP.**
+* `/cosmetic perms <Action> <Permission_Type> <Subject_Type> <Permission> <Subject>` – Checks or modifies mod permissions. **Requires OP.**
 
-*   `/cosmetic change` manually opens the Cosmetic Customization UI. Does not require permissions
+---
 
-*   `/cosmetic list` prints in chat all loaded cosmetic ids. Requires OP
-        `--permissions` prints all the parameters as their relative permissions.
+### <span style="color:#236FA1;">Parameters</span>
+These are the parameters used in the commands above.
 
-*   `/cosmetic reload` manually reloads all cosmetics. Requires OP
+##### <span style="color:#236FA1;">Cosmetic_ID</span>
+The complete ID of the cosmetic. Use `/cosmetic list` to see all available IDs.
 
-*   `/cosmetic clear` removes all custom cosmetics and resets the default skin. Requires OP
+##### <span style="color:#236FA1;">Action</span>
+* `add`: Adds a permission. <br/>
+* `remove`: Removes a permission. <br/>
+* `check`: Checks a permission status. <br/>
 
+##### <span style="color:#236FA1;">Permission_Type</span>
+* `cosmetic`: A permission for a specific cosmetic. <br/>
+* `slot`: A permission for a slot (applies to all cosmetics within it). <br/>
+
+##### <span style="color:#236FA1;">Subject_Type</span>
+* `player`: Sets the permission for a specific player. <br/>
+* `group`: Sets the permission for an entire group. <br/>
+
+##### <span style="color:#236FA1;">Permission</span>
+Enter the specific permission node here. <br/>
+You can find more info on how permissions are formatted [here](#permissions-optional). <br/>
+
+##### <span style="color:#236FA1;">Subject</span>
+* If **Subject_Type** is `player`: Enter the player's name or UUID. <br/>
+* If **Subject_Type** is `group`: Enter the group name. <br/>
 
 ## <span style="color:#3598DB;">Registering cosmetics</span>
 
-<span style="color:#E03E2D;">!Warning! Remember that the name you give to the files is important!</span>
+> <span style="color:#E03E2D;">!Warning! Remember that the name you give to the files is important!</span>
 
 Registering a cosmetic is quite simple. You'll need to make an asset pack (obviously), and will need 3 files:
 
@@ -107,9 +131,9 @@ The Hair_Extension slot automatically takes the same gradient as the Hairstyle.
 
 ## <span style="color:#3598DB;">Variants (optional)</span>
 
-<span style="color:#E03E2D;">!Warning! Variants and colors are mutually exclusive!</span>
+> <span style="color:#E03E2D;">!Warning! Variants and colors are mutually exclusive!</span>
 
-<span style="color:#E03E2D;">!Warning! Hair extensions cannot have variants nor colors, they changes according to the hairstyle!</span>
+> <span style="color:#E03E2D;">!Warning! Hair extensions cannot have variants nor colors, they changes according to the hairstyle!</span>
 
 This API also allows you to add variants.
 
@@ -143,9 +167,9 @@ They will be seen by the API as variants of the same cosmetic, so they will impl
 
 ## <span style="color:#3598DB;">Colors (optional)</span>
 
-<span style="color:#E03E2D;">!Warning! Variants and colors are mutually exclusive!</span> <br/>
+> <span style="color:#E03E2D;">!Warning! Variants and colors are mutually exclusive!</span> <br/>
 
-<span style="color:#E03E2D;">!Warning! Hair extensions cannot have variants nor colors, they change according to the hairstyle!</span>
+> <span style="color:#E03E2D;">!Warning! Hair extensions cannot have variants nor colors, they change according to the hairstyle!</span>
 
 This API also allows you to add multiple colors to a cosmetic!
 
