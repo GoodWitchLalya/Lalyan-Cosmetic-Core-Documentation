@@ -1,0 +1,13 @@
+---
+import Update from "../Title/Update.astro";
+
+interface Props {
+    version: string;
+}
+
+const { version } = Astro.props;
+---
+
+<Update version={version} color="#3598DB">
+<slot />
+</Update>

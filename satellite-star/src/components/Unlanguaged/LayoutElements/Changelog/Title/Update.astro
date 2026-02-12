@@ -1,0 +1,11 @@
+---
+
+interface Props {
+    version: string;
+    color: string;
+}
+
+const { version, color } = Astro.props;
+---
+
+<span style={"color:" + color} id={"version-" + version}><slot /></span>
